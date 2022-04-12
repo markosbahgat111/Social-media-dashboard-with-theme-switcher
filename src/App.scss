@@ -1,0 +1,58 @@
+.App{
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+    position: absolute;
+    overflow: hidden;
+}
+
+.App#dark{
+    background-color: hsl(230, 17%, 14%);
+    color: white;
+}
+.App#light{
+    background-color: white;
+    color: black;
+}
+.main_container{
+    width: 1200px;
+    height: fit-content;
+    margin: auto;
+    section span{
+        color: hsl(228, 34%, 66%);
+    }
+    
+}
+.toggle {
+    padding: 0 5px;
+    background-color: hsl(230, 22%, 74%);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.toggle i{
+    color: white;
+    font-size: 15px;
+}
+.toggle#dark{
+    background:linear-gradient(0.25turn, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+.toggle#dark i {
+    color: hsl(230, 17%, 15%);
+}
+.toggle#light i{
+	transform: translateX(22px);
+	-webkit-transform: translateX(22px);
+	-moz-transform: translateX(22px);
+	-ms-transform: translateX(22px);
+	-o-transform: translateX(22px);
+}
+@media screen and (max-width:1220px){
+    .main_container{
+        width: 90%;
+        height: fit-content;
+        margin: auto;
+    }
+}
