@@ -3,6 +3,7 @@ import SocialBox from 'components/socialBox/socialBox.component';
 import { useState } from 'react';
 import './App.scss';
 import data from './data.json';
+
 function App() {
   console.log(data)
   const [theme, setTheme] = useState<boolean>(true);
